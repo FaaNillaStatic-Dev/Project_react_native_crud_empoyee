@@ -1,0 +1,8 @@
+{
+    "editor.autoClosingQuotes": "languageDefined",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "cSpell.ignoreWords": [
+        "Token"
+    ],
+    "diffEditor.ignoreTrimWhitespace": false
+}

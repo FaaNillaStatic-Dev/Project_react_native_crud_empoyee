@@ -1,0 +1,161 @@
+import { StyleSheet, StatusBar, Platform } from "react-native";
+
+const style = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: "column",
+    margin: 0,
+    padding: 0,
+    ...Platform.select({
+      ios: { paddingTop: 20 },
+      android: { paddingTop: StatusBar.currentHeight },
+    }),
+    backgroundColor: "#E6E6E6",
+  },
+
+  Box: {
+    height: 270,
+    marginTop: 10,
+    marginStart: 10,
+    marginEnd: 10,
+    marginBottom: 15,
+    paddingTop: 10,
+    paddingStart: 10,
+    alignSelf: "stretch",
+    flexDirection: "row",
+    borderRadius: 4,
+    borderWidth: 0.5,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.29,
+    shadowRadius: 4.65,
+    elevation: 7,
+    padding: 4,
+    alignContent: "center",
+    borderColor: "#CECCCC",
+    alignItems: "flex-start",
+    justifyContent: "flex-start",
+    backgroundColor: "#EEEEEE",
+  },
+  TextFlex: {
+    flex: 2,
+    paddingStart: 24,
+    paddingTop: 16,
+    flexDirection: "column",
+    alignItems: "flex-start",
+    justifyContent: "flex-start",
+    alignContent: "flex-start",
+  },
+  Text: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginStart: 3,
+  },
+  PicProfil: {
+    height: 125,
+    width: 75,
+    overflow: "hidden",
+    marginStart: 16,
+    marginTop: 16,
+  },
+  TextItemTitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    fontFamily: "sans-serif",
+    marginTop: 1,
+    color: "#0A1931",
+    marginStart: 3,
+  },
+  TextItem: {
+    fontSize: 14,
+    fontFamily: "sans-serif",
+    marginTop: 1,
+    marginBottom: 35,
+    marginStart: 3,
+    color: "#205375",
+  },
+
+  PositionFAB: {
+    position: "absolute",
+    bottom: 16,
+    end: 16,
+    alignItems: "flex-end",
+    justifyContent: "flex-end",
+    backgroundColor: "#185ADB",
+  },
+  indicatorText: {
+    fontSize: 12,
+    marginTop: 5,
+  },
+  PositionLoading: {
+    position: "absolute",
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
+  modalStyle: {
+    backgroundColor: "white",
+    padding: 10,
+    width: 150,
+    height: 150,
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  iconStyle: {
+    marginEnd: 36,
+    marginTop: 16,
+    alignItems: "flex-end",
+    justifyContent: "flex-end",
+  },
+  TextInputNormal: {
+    margin: 16,
+  },
+  TextInputTextArea: {
+    margin: 16,
+  },
+  BtnDatePicker: {
+    margin: 16,
+  },
+  btnSubmit: {
+    margin: 16,
+    width: 100,
+    alignSelf: "center",
+  },
+  BtnLogin: {
+    margin: 16,
+    alignSelf: "center",
+    top: 108,
+  },
+  styleTextHeader: {
+    marginStart: 8,
+    flex: 2,
+    top: 8,
+    color: "#0E70B9",
+    marginLeft: 2,
+    marginTop: 8,
+    marginBottom: 8,
+    fontSize: 20,
+    fontWeight: "bold",
+    alignSelf: "center",
+    justifyContent: "center",
+  },
+  TextHeader: {
+    alignSelf: "stretch",
+    flexDirection: "row",
+    alignContent: "flex-start",
+    height: 54,
+    margin: 4,
+    top: 8,
+  },
+});
+
+export default style;
