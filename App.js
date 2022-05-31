@@ -2,6 +2,7 @@ import Home from "./components/screen/Home";
 import Login from "./components/screen/Login";
 import AddScreen from "./components/screen/AddScreen";
 import UpdateScreen from "./components/screen/UpdateScreen";
+import SplashScreen from "./components/screen/SplashScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
@@ -12,9 +13,15 @@ export default function App() {
     <NavigationContainer>
       <root.Navigator>
         <root.Screen
+          name="SplashScreen"
+          component={SplashScreen}
+          title="SplashScreen"
+          options={{ headerShown: false }}
+        />
+        <root.Screen
           name="Login"
           component={Login}
-          title="Login3"
+          title="Login"
           options={{ headerShown: false }}
         />
         <root.Screen

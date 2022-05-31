@@ -156,6 +156,18 @@ const style = StyleSheet.create({
     margin: 4,
     top: 8,
   },
+  containerSplash: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
+    ...Platform.select({
+      ios: { paddingTop: 20 },
+      android: { paddingTop: StatusBar.currentHeight },
+    }),
+    margin: 0,
+    backgroundColor: "#E6E6E6",
+  },
 });
 
 export default style;
